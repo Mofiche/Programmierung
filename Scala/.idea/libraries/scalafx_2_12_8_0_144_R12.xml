@@ -1,9 +1,0 @@
-<component name="libraryTable">
-  <library name="scalafx_2.12-8.0.144-R12">
-    <CLASSES>
-      <root url="jar://$PROJECT_DIR$/src/jars/scalafx_2.12-8.0.144-R12.jar!/" />
-    </CLASSES>
-    <JAVADOC />
-    <SOURCES />
-  </library>
-</component>
