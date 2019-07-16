@@ -8,12 +8,12 @@ def calc_Heart(size):
     x_vals = []
     y_vals = []
     for x in range(0, 6283):
-        #x_vals.append(16 * pow(sin(x / 1000), 3))
-        x_vals.append(exp(x/1000))
+        x_vals.append(16 * pow(sin(x / 1000), 3))
+
     for y in range(0, 6283):
         y = y / 1000
-        #y_vals.append((13 * cos(y)) - (5 * cos(2 * y)) - (2 * cos(3 * y)) - (cos(4 * y)))
-        y_vals.append(sin(y))
+        y_vals.append((13 * cos(y)) - (5 * cos(2 * y)) - (2 * cos(3 * y)) - (cos(4 * y)))
+
     for x in range(0, 6283):
         x_vals[x] = -x_vals[x] * size + 400
         y_vals[x] = -y_vals[x] * size + 350
