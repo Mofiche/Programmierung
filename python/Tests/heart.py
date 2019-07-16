@@ -1,5 +1,6 @@
-from tkinter import Tk, IntVar, Canvas
+from tkinter import Tk, Canvas
 from numpy import sin, cos
+from random import randint
 import time
 
 
@@ -26,26 +27,38 @@ def calc_Heart(size):
 
 
 gui = Tk()
-var = IntVar()
-gui.geometry("800x800")
 gui.title("Schatzi")
 canvas = Canvas(gui, width=800, height=800, bg="white")
 canvas.pack()
 data = calc_Heart(20)
 obj1 = canvas.create_polygon(data, fill='#FF0000')
-obj2 = canvas.create_text(400, 50,font = 20, text = "Ich liebe dich")
+obj2 = canvas.create_text(400, 50, font=20, text="Ich liebe dich")
 
 
-def change_heart_size(size, zeit=0.0075):
-    canvas.coords(obj1, calc_Heart(size))
+def change_heart_size(obj, size, zeit=0.01):
+    canvas.coords(obj, calc_Heart(size))
+
     gui.update()
     time.sleep(zeit)
 
 
+def change_heart_color(obj, color):
+    canvas.itemconfig(obj, fill=color)
+
+
+def getRandomHex():
+    ran = randint(0, 16777215)
+    return "#" + format(ran, '06x')
+
+
 for i in range(0, 200):
-    change_heart_size(i/10, 0.01/(i+1))
-while(True):
-    change_heart_size(19,0.4)
-    change_heart_size(20,0.4)
+    change_heart_size(obj1, i / 10, 0)
+    # change_heart_color(obj1,  getRandomHex())
+
+while (True):
+    change_heart_size(obj1, 19, 0.4)
+    # change_heart_color(obj1, getRandomHex())
+    change_heart_size(obj1, 20, 0.4)
+    # change_heart_color(obj1, getRandomHex())
 
 gui.mainloop()

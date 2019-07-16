@@ -1,24 +1,27 @@
-from tkinter import *
-
-canvas_width = 1000
-canvas_height = 800
-
-
-def paint(event):
-    python_green = "#476042"
-    x1, y1 = (event.x - 1), (event.y - 1)
-    x2, y2 = (event.x + 1), (event.y + 1)
-    w.create_oval(x1, y1, x2, y2, fill=python_green)
+from tkinter import Tk, Canvas
+from numpy import abs
+import time
 
 
-master = Tk()
-master.title("Painting using Ovals")
-w = Canvas(master,
-           width=canvas_width,
-           height=canvas_height)
-w.pack(expand=YES, fill=BOTH)
-w.bind("<B1-Motion>", paint)
 
-message = Label(master, text="Press and Drag the mouse to draw")
-message.pack(side=BOTTOM)
-mainloop()
+gui = Tk()
+gui.title("Pong")
+canvas = Canvas(gui, width=600, height=600, bg="white")
+canvas.pack()
+wall1 = canvas.create_rectangle(0,100,30,200, fill='black')
+wall2 = canvas.create_rectangle(570,400,600,500, fill='black')
+ball = canvas.create_oval(290,290,310,310, fill='black')
+
+def a(event):
+    x = event.x
+    y = event.y
+    if 0 <= x <=25:
+        midpoint_x = 15
+        midpoint_y = 150
+        diff_x = midpoint_x + x
+        diff_y = midpoint_y + y
+        canvas.move(wall1,diff_x,diff_y )
+
+canvas.bind("<B1-Motion>",a )
+
+gui.mainloop()
