@@ -35,9 +35,6 @@ obj1 = canvas.create_polygon(data, fill='#FF0000')
 obj2 = canvas.create_text(400, 50, font=20, text="Ich liebe dich")
 
 
-obj2 = canvas.create_text(400, 50,font = 20, text = "Ich liebe dich")
-
-
 def change_heart_size(obj, size, zeit=0.0075):
     canvas.coords(obj, calc_Heart(size))
     gui.update()
