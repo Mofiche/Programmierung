@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fffd0fc8-bb3c-47ef-a01d-012e36262c23" name="Default Changelist" comment="">
+<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/.idea/Programmierung.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Programmierung.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
@@ -12,6 +13,11 @@
       <change beforePath="$PROJECT_DIR$/python/Tests/heart.py" beforeDir="false" afterPath="$PROJECT_DIR$/python/Tests/heart.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/python/Tests/heart.spec" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/python/Tests/test.spec" beforeDir="false" />
+=======
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python/Tests/heart.py" beforeDir="false" afterPath="$PROJECT_DIR$/python/Tests/heart.py" afterDir="false" />
+>>>>>>> bf264895e5d4519c1ed88bb4166efaeb48880bb3
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -39,8 +45,13 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/python/Tests/heart.py">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state relative-caret-position="510">
               <caret line="30" selection-start-line="30" selection-end-line="31" selection-end-column="13" />
+=======
+            <state relative-caret-position="445">
+              <caret line="45" column="32" selection-start-line="45" selection-start-column="32" selection-end-line="45" selection-end-column="32" />
+>>>>>>> bf264895e5d4519c1ed88bb4166efaeb48880bb3
               <folding>
                 <element signature="e#0#38#0" expanded="true" />
               </folding>
@@ -71,7 +82,10 @@
         <option value="$PROJECT_DIR$/python/Tests/a.py" />
         <option value="$PROJECT_DIR$/python/Tests/test.py" />
         <option value="$PROJECT_DIR$/python/Tests/heart.py" />
+<<<<<<< HEAD
         <option value="$PROJECT_DIR$/python/GUI/Pong/Pong.py" />
+=======
+>>>>>>> bf264895e5d4519c1ed88bb4166efaeb48880bb3
       </list>
     </option>
   </component>
@@ -85,6 +99,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -120,7 +135,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -232,15 +246,25 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
+<<<<<<< HEAD
     <frame x="953" y="0" width="974" height="1047" extended-state="0" />
+=======
+    <frame x="-7" y="-7" width="1295" height="828" extended-state="6" />
+    <editor active="true" />
+>>>>>>> bf264895e5d4519c1ed88bb4166efaeb48880bb3
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22222222" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" weight="0.32962668" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
+<<<<<<< HEAD
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49960285" weight="0.3632385" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39824945" />
+=======
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49960285" weight="0.36011478" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39885223" />
+>>>>>>> bf264895e5d4519c1ed88bb4166efaeb48880bb3
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -330,8 +354,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/python/Tests/heart.py">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="510">
           <caret line="30" selection-start-line="30" selection-end-line="31" selection-end-column="13" />
+=======
+        <state relative-caret-position="445">
+          <caret line="45" column="32" selection-start-line="45" selection-start-column="32" selection-end-line="45" selection-end-column="32" />
+>>>>>>> bf264895e5d4519c1ed88bb4166efaeb48880bb3
           <folding>
             <element signature="e#0#38#0" expanded="true" />
           </folding>

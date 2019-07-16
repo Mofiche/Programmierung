@@ -1,6 +1,9 @@
 from tkinter import Tk, Canvas
 from numpy import sin, cos
+<<<<<<< HEAD
 from random import randint
+=======
+>>>>>>> bf264895e5d4519c1ed88bb4166efaeb48880bb3
 import time
 
 
@@ -32,16 +35,25 @@ canvas = Canvas(gui, width=800, height=800, bg="white")
 canvas.pack()
 data = calc_Heart(20)
 obj1 = canvas.create_polygon(data, fill='#FF0000')
+<<<<<<< HEAD
 obj2 = canvas.create_text(400, 50, font=20, text="Ich liebe dich")
 
 
 def change_heart_size(obj, size, zeit=0.01):
     canvas.coords(obj, calc_Heart(size))
 
+=======
+obj2 = canvas.create_text(400, 50,font = 20, text = "Ich liebe dich")
+
+
+def change_heart_size(size, zeit=0.0075):
+    canvas.coords(obj1, calc_Heart(size))
+>>>>>>> bf264895e5d4519c1ed88bb4166efaeb48880bb3
     gui.update()
     time.sleep(zeit)
 
 
+<<<<<<< HEAD
 def change_heart_color(obj, color):
     canvas.itemconfig(obj, fill=color)
 
@@ -60,5 +72,12 @@ while (True):
     # change_heart_color(obj1, getRandomHex())
     change_heart_size(obj1, 20, 0.4)
     # change_heart_color(obj1, getRandomHex())
+=======
+for i in range(0, 200):
+    change_heart_size(i/10, 0.01/(i+1))
+while(True):
+    change_heart_size(19,0.4)
+    change_heart_size(20,0.4)
+>>>>>>> bf264895e5d4519c1ed88bb4166efaeb48880bb3
 
 gui.mainloop()
