@@ -60,11 +60,5 @@ while (True):
     change_heart_size(obj1, 20, 0.4)
     # change_heart_color(obj1, getRandomHex())
 
-for i in range(0, 200):
-    change_heart_size(i/10, 0.01/(i+1))
-while(True):
-    change_heart_size(19,0.4)
-    change_heart_size(20,0.4)
-
 
 gui.mainloop()
