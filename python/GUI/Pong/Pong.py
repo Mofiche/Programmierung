@@ -11,41 +11,56 @@ canvas.pack()
 wall1 = canvas.create_rectangle(0, 100, 30, 200, fill='black')
 wall2 = canvas.create_rectangle(570, 400, 600, 500, fill='black')
 ball = canvas.create_oval(290, 290, 310, 310, fill='black')
-score_l = canvas.create_text(20, 20, text="0", font=50, fill='red')
+score_l = canvas.create_text(20, 20, text="0", font=100, fill='red')
 score_1_int = 0
-score_2 = canvas.create_text(580, 20, text="0", font=50, fill='red')
+score_2 = canvas.create_text(580, 20, text="0", font=100, fill='red')
 score_2_int = 0
 v_ball_x = 0
 v_ball_y = 0
 
 while v_ball_x == 0:
-    v_ball_x = random.randint(-5, 5)
+    v_ball_x = random.randint(-50, 50) / 10
 while v_ball_y == 0:
-    v_ball_y = random.randint(-5, 5)
+    v_ball_y = random.randint(-50, 50) / 10
 
 v_abs = sqrt(v_ball_x * v_ball_x + v_ball_y * v_ball_y)
 v_ball_x = v_ball_x / v_abs / 2
 v_ball_y = v_ball_y / v_abs / 2
 
 
-def change(event):
-    x = event.x
+
+def wall2_change(event):
     y = event.y
     if 0 <= y <= 500:
-        wall_y = canvas.coords(wall1)[1]
-        canvas.move(wall1, 0, y - wall_y)
+        wall_y = canvas.coords(wall2)[1]
+        canvas.move(wall2, 0, y - wall_y)
 
 
-while (True):
+def wall1_up(event):
+    if canvas.coords(wall1)[1] >= 0:
+        canvas.move(wall1, 0, -30)
+
+
+def wall1_down(event):
+    if canvas.coords(wall1)[1] <= 500:
+        canvas.move(wall1, 0, 30)
+
+
+
+while True:
     canvas.move(ball, v_ball_x, v_ball_y)
     gui.update()
-    time.sleep(0.1 / 100)
+    time.sleep(0.1 / 50)
     ol_x = int(canvas.coords(ball)[0])
     ol_y = int(canvas.coords(ball)[1])
     ur_x = int(canvas.coords(ball)[2])
     ur_y = int(canvas.coords(ball)[3])
 
-    canvas.bind("<Motion>", change)
+    canvas.bind_all("<Motion>", wall2_change)
+    canvas.bind_all('w', wall1_up)
+    canvas.bind_all('s', wall1_down)
+    canvas.bind_all('<Up>', wall1_up)
+    canvas.bind_all('<Down>', wall1_down)
 
     wall1_l_x = int(canvas.coords(wall1)[0])
     wall1_l_y = int(canvas.coords(wall1)[1])
@@ -74,9 +89,9 @@ while (True):
         canvas.move(ball, 300 - ol_x, 300 - ol_y)
         v_ball_x, v_ball_y = 0, 0
         while v_ball_x == 0:
-            v_ball_x = random.randint(-5, 5)
+            v_ball_x = random.randint(-50, 50) / 10
         while v_ball_y == 0:
-            v_ball_y = random.randint(-5, 5)
+            v_ball_y = random.randint(-50, 50) / 10
 
         v_abs = sqrt(v_ball_x * v_ball_x + v_ball_y * v_ball_y)
         v_ball_x = v_ball_x / v_abs / 2
@@ -88,9 +103,9 @@ while (True):
         canvas.move(ball, 300 - ur_x, 300 - ur_y)
         v_ball_x, v_ball_y = 0, 0
         while v_ball_x == 0:
-            v_ball_x = random.randint(-5, 5)
+            v_ball_x = random.randint(-50, 50) / 10
         while v_ball_y == 0:
-            v_ball_y = random.randint(-5, 5)
+            v_ball_y = random.randint(-50, 50) / 10
 
         v_abs = sqrt(v_ball_x * v_ball_x + v_ball_y * v_ball_y)
         v_ball_x = v_ball_x / v_abs / 2
