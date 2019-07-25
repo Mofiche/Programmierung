@@ -52,13 +52,13 @@ def getRandomHex():
 
 for i in range(0, 200):
     change_heart_size(obj1, i / 10, 0)
-    # change_heart_color(obj1,  getRandomHex())
+    change_heart_color(obj1,  getRandomHex())
 
 while (True):
     change_heart_size(obj1, 19, 0.4)
-    # change_heart_color(obj1, getRandomHex())
+    change_heart_color(obj1, getRandomHex())
     change_heart_size(obj1, 20, 0.4)
-    # change_heart_color(obj1, getRandomHex())
+    change_heart_color(obj1, getRandomHex())
 
 
 gui.mainloop()
