@@ -26,6 +26,4 @@ def getPrimeFactors(number):
     return factors
 
 
-zahl = int(1E7 - 1)
-primes = getPrimeFactors(zahl)
-print(str(zahl) + "\n" + str(primes))
+print(isPrime(8021658347))
