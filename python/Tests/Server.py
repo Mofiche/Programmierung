@@ -1,6 +1,7 @@
 import socket
 from numpy import *
 
+
 def isPrime(number):
     if number > 1:
         if number == 2:
@@ -25,12 +26,13 @@ def getPrimeFactors(number):
         factors.append(i) if number % i == 0 else None
     return factors
 
+
 server_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 server_socket.bind(('192.168.2.104', 1337))
 server_socket.listen(1)
 while True:
     (client_socket, addr) = server_socket.accept()
-    msg = str(client_socket.recv(2**10), 'utf8')
-    print(msg)
-    antwort = getPrimeFactors(int(msg))
-    client_socket.send(bytes(str(antwort),'utf8'))
+    msg = str(client_socket.recv(2 ** 10), 'utf8')
+    antwort = bytes(str(getPrimeFactors(int(msg))), 'utf8')
+    print(msg, str(antwort, 'utf8'))
+    client_socket.send(antwort)

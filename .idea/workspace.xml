@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="74f2a1b5-f22e-4fb6-bdfd-2c6a541fb04a" name="Default Changelist" comment="cleaning">
+    <list default="true" id="74f2a1b5-f22e-4fb6-bdfd-2c6a541fb04a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/julia/Tests/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/julia/Tests/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/python/Tests/Probieren.py" beforeDir="false" afterPath="$PROJECT_DIR$/python/Tests/Probieren.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/python/Tests/Server.py" beforeDir="false" afterPath="$PROJECT_DIR$/python/Tests/Server.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -211,7 +209,14 @@
       <option name="project" value="LOCAL" />
       <updated>1563382203772</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="cleaning">
+      <created>1564055274301</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1564055274301</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TodoView">
