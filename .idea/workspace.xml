@@ -2,9 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="74f2a1b5-f22e-4fb6-bdfd-2c6a541fb04a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/python/GUI/Agario.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/python/Tests/kurz.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/python/Tests/lang.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/python/Tests/primfac.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/python/Tests/Server.py" beforeDir="false" afterPath="$PROJECT_DIR$/python/Tests/Server.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python/Tests/Client.py" beforeDir="false" afterPath="$PROJECT_DIR$/python/Tests/Client.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python/Tests/Probieren.py" beforeDir="false" afterPath="$PROJECT_DIR$/python/Tests/Probieren.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -23,16 +27,12 @@
     <option name="UPDATE_TYPE" value="MERGE" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-12" />
-    <option name="width" value="981" />
-    <option name="height" value="1230" />
-  </component>
   <component name="ProjectId" id="1OVFdDTc4dP85pr4CAfKxSAoBfs" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -54,7 +54,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.Server">
+  <component name="RunManager" selected="Python.Probieren">
     <configuration name="Client" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Programmierung" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -169,9 +169,9 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.Server" />
         <item itemvalue="Python.Probieren" />
         <item itemvalue="Python.Client" />
+        <item itemvalue="Python.Server" />
         <item itemvalue="Python.heart" />
         <item itemvalue="Python.Pong" />
       </list>
@@ -233,13 +233,16 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="fix4" />
     <MESSAGE value="pong fertig" />
     <MESSAGE value="cleaning" />
