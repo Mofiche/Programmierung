@@ -2,13 +2,27 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="74f2a1b5-f22e-4fb6-bdfd-2c6a541fb04a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/python/GUI/Agario.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/python/Tests/kurz.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/python/Tests/lang.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/python/Tests/primfac.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/python/NN/CatOrDog.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/python/NN/Mnist.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/python/NN/data/MNIST/processed/test.pt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/python/NN/data/MNIST/processed/training.pt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/python/NN/data/MNIST/raw/t10k-images-idx3-ubyte" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/python/NN/data/MNIST/raw/t10k-images-idx3-ubyte.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/python/NN/data/MNIST/raw/t10k-labels-idx1-ubyte" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/python/NN/data/MNIST/raw/t10k-labels-idx1-ubyte.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/python/NN/data/MNIST/raw/train-images-idx3-ubyte" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/python/NN/data/MNIST/raw/train-images-idx3-ubyte.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/python/NN/data/MNIST/raw/train-labels-idx1-ubyte" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/python/NN/data/MNIST/raw/train-labels-idx1-ubyte.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/python/NN/mnist.pt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/python/Tests/heart.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/python/Tests/test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/python/Tests/Client.py" beforeDir="false" afterPath="$PROJECT_DIR$/python/Tests/Client.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/python/Tests/Probieren.py" beforeDir="false" afterPath="$PROJECT_DIR$/python/Tests/Probieren.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python/Tests/Probieren.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python/Tests/Server.py" beforeDir="false" afterPath="$PROJECT_DIR$/python/Tests/Server.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python/Tests/kurz.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python/Tests/lang.mp3" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -54,7 +68,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.Probieren">
+  <component name="RunManager" selected="Python.test">
     <configuration name="Client" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Programmierung" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -68,6 +82,27 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/python/Tests/Client.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Mnist" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Programmierung" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/python/NN" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/python/NN/Mnist.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -139,7 +174,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="heart" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="test" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Programmierung" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -151,7 +186,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/python/Tests/heart.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/python/Tests/test.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -162,18 +197,19 @@
     </configuration>
     <list>
       <item itemvalue="Python.Pong" />
-      <item itemvalue="Python.heart" />
       <item itemvalue="Python.Probieren" />
       <item itemvalue="Python.Server" />
       <item itemvalue="Python.Client" />
+      <item itemvalue="Python.Mnist" />
+      <item itemvalue="Python.test" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.test" />
+        <item itemvalue="Python.Mnist" />
         <item itemvalue="Python.Probieren" />
-        <item itemvalue="Python.Client" />
         <item itemvalue="Python.Server" />
-        <item itemvalue="Python.heart" />
-        <item itemvalue="Python.Pong" />
+        <item itemvalue="Python.Client" />
       </list>
     </recent_temporary>
   </component>
