@@ -5,6 +5,7 @@ from torch.autograd import Variable
 from torchvision import datasets, transforms
 import torch.optim as optim
 import os
+from PIL import Image, ImageFilter
 
 kwargs = {'num_workers': 1, 'pin_memory': True}
 
@@ -41,7 +42,7 @@ class Netz(nn.Module):
         x = F.relu(x)
         x = x.view(-1, 320)
         x = self.fc1(x)
-        x = F.relu((x))
+        x = F.relu(x)
         x = self.fc2(x)
         return F.log_softmax(x)
 
@@ -91,11 +92,11 @@ def test():
     print("Avg Loss :  {:.6f}".format(loss))
     print("Genauigkeit : {:.4f} %".format(100. * correct/len(test_data.dataset)))
 
+
 if __name__ == '__main__':
     for epoch in range(1, 5):
         if os.path.isfile("mnist.pt"):
             model = torch.load("mnist.pt")
-        train(epoch)
+        #train(epoch)
         torch.save(model, "mnist.pt")
-    test()
-
+    #test()
