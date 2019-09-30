@@ -1,15 +1,23 @@
-from pynput.keyboard import Controller, Key
-import PyAutoGUI as p
-import time
+from math import *
 
-keyboard = Controller()
-mail = 'fkw.peter@gmx.de'
-pw = 'NETAbi2019'
-for i in range(5):
-    p.click(1850,50)
-    time.sleep(10)
-    p.click(1850,50)
-keyboard.type(mail)
-keyboard.press(Key.tab)
-keyboard.release(Key.tab)
-keyboard.type(pw)
+
+
+def isPrime(number):
+    if number <= 1: return False
+    if number == 2: return True
+    if number % 2 == 0: return False
+    for i in range(2, ceil(sqrt(number)) + 1):
+        if number % i == 0: return False
+    return True
+
+
+def factorize(number):
+    primes = [i for i in range(0, number + 1) if isPrime(i)]
+    factors = [i for i in primes if number % i == 0]
+    dummy = []
+    return factors
+
+
+
+for i in range(10000):
+    print(factorize(i), i)
