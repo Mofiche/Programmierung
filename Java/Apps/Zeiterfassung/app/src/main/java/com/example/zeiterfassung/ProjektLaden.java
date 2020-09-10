@@ -9,7 +9,9 @@ import android.view.KeyEvent;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
+import android.widget.ScrollView;
 
 import java.io.File;
 
@@ -41,7 +43,19 @@ public class ProjektLaden extends AppCompatActivity {
         final ProjektLaden projekt = this;
         final Button[] buttons = new Button[files.length];
         final RelativeLayout.LayoutParams[] button_details = new RelativeLayout.LayoutParams[buttons.length];
+        ScrollView scrollview = new ScrollView(this);
+        LinearLayout layout = new LinearLayout(this);
 
+
+        scrollview.setId(-1);
+        layout.setId(-2);
+        RelativeLayout.LayoutParams scrollview_details = new RelativeLayout.LayoutParams(RelativeLayout.LayoutParams.WRAP_CONTENT, RelativeLayout.LayoutParams.WRAP_CONTENT);
+        RelativeLayout.LayoutParams layout_details = new RelativeLayout.LayoutParams(RelativeLayout.LayoutParams.WRAP_CONTENT, RelativeLayout.LayoutParams.WRAP_CONTENT);
+
+        scrollview_details.addRule(RelativeLayout.CENTER_HORIZONTAL);
+        layout_details.addRule(RelativeLayout.CENTER_HORIZONTAL);
+        scrollview_details.addRule(RelativeLayout.BELOW);
+        layout_details.addRule(RelativeLayout.BELOW);
 
         for(int i = 0; i<=files.length - 1;i++){
             System.out.println(files[i]);
@@ -56,7 +70,7 @@ public class ProjektLaden extends AppCompatActivity {
             if(i != 0) {
                 button_details[i].addRule(RelativeLayout.BELOW, i);
             }else {
-                button_details[i].addRule(RelativeLayout.BELOW);
+                button_details[i].addRule(RelativeLayout.BELOW,-1);
             }
             buttons[i].setOnClickListener(
                     new Button.OnClickListener(){
@@ -68,10 +82,14 @@ public class ProjektLaden extends AppCompatActivity {
                         }
                     }
             );
-            rel.addView(buttons[i], button_details[i]);
+
+            layout.addView(buttons[i],button_details[i]);
+
 
         }
-
+        layout.setOrientation(1);
+        scrollview.addView(layout,layout_details);
+        rel.addView(scrollview,scrollview_details);
         setContentView(rel);
     }
 }
