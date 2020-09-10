@@ -73,3 +73,8 @@ def derivative(func, x):
 
 def kapital(k, q, n, r):
     return (k * np.power(q, n)) + (r * q * ((np.power(q, n) - 1) / (q - 1)))
+
+
+a = np.matrix([[1,5],[3,4]])
+b = np.matrix([[2,4],[4,9]])
+print(a)
