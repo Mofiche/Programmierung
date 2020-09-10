@@ -48,7 +48,7 @@ public class ProjektLaden extends AppCompatActivity {
 
 
         scrollview.setId(-1);
-        layout.setId(-2);
+        layout.setId(-12);
         RelativeLayout.LayoutParams scrollview_details = new RelativeLayout.LayoutParams(RelativeLayout.LayoutParams.WRAP_CONTENT, RelativeLayout.LayoutParams.WRAP_CONTENT);
         RelativeLayout.LayoutParams layout_details = new RelativeLayout.LayoutParams(RelativeLayout.LayoutParams.WRAP_CONTENT, RelativeLayout.LayoutParams.WRAP_CONTENT);
 
