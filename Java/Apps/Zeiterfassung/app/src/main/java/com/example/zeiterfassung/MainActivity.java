@@ -26,10 +26,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     public boolean onKeyDown(int keyCode, KeyEvent event) {
         if(keyCode == KeyEvent.KEYCODE_BACK) {
-            System.out.println("!!!");
-            final MainActivity projekt = this;
-            Intent intent = new Intent(projekt, MainActivity.class);
-            startActivity(intent);
+            System.exit(0);
         }
         return super.onKeyDown(keyCode, event);
     }

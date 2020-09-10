@@ -64,7 +64,7 @@ public class ProjektLoeschen extends AppCompatActivity {
                         @Override
                         public void onClick(View view) {
                             File directory = getFilesDir();
-                            File file = new File(directory, (String) buttons[j].getText());
+                            File file = new File(directory, ((String) buttons[j].getText()).concat(".dat"));
                             file.delete();
                             Intent intent = new Intent(projekt, ProjektLoeschen.class);
                             startActivity(intent);
