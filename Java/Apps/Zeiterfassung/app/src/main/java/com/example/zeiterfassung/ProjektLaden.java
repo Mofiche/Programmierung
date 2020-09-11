@@ -48,11 +48,11 @@ public class ProjektLaden extends AppCompatActivity {
 
         final RelativeLayout.LayoutParams[] button_details = new RelativeLayout.LayoutParams[buttons.length];
         ScrollView scrollview = new ScrollView(this);
-        LinearLayout layout = new LinearLayout(this);
+        RelativeLayout layout = new RelativeLayout(this);
 
 
         scrollview.setId(-1);
-        layout.setId(-12);
+        layout.setId(-2);
         RelativeLayout.LayoutParams scrollview_details = new RelativeLayout.LayoutParams(RelativeLayout.LayoutParams.WRAP_CONTENT, RelativeLayout.LayoutParams.WRAP_CONTENT);
         RelativeLayout.LayoutParams layout_details = new RelativeLayout.LayoutParams(RelativeLayout.LayoutParams.WRAP_CONTENT, RelativeLayout.LayoutParams.WRAP_CONTENT);
 
@@ -93,7 +93,6 @@ public class ProjektLaden extends AppCompatActivity {
 
 
         }
-        layout.setOrientation(1);
         scrollview.addView(layout,layout_details);
         rel.addView(scrollview,scrollview_details);
         setContentView(rel);

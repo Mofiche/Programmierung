@@ -12,7 +12,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ProjektLoeschen"></activity>
+        <activity android:name=".Zusammenfassung"></activity>
+        <activity android:name=".Projektzusammenfassung" />
+        <activity android:name=".ProjektLoeschen" />
         <activity android:name=".Projekt" />
         <activity android:name=".ProjektLaden" />
         <activity android:name=".NeuesProjekt" />

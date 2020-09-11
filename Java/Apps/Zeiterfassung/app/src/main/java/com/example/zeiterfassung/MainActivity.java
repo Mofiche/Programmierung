@@ -111,7 +111,8 @@ public class MainActivity extends AppCompatActivity {
         projektzusammenfassung.setOnClickListener(
                 new Button.OnClickListener(){
                     public void onClick(View v){
-                        //
+                        Intent i = new Intent(main, Projektzusammenfassung.class);
+                        startActivity(i);
                     }
                 }
 
