@@ -1,24 +1,22 @@
 package com.example.zeiterfassung;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.KeyEvent;
 import android.view.View;
 import android.widget.Button;
-import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.ScrollView;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 import java.io.File;
 
 public class ProjektLoeschen extends AppCompatActivity {
 
     String formatieren(String string){
-        int index = string.indexOf(".dat");
         return string.replaceAll(".dat","");
     }
 
@@ -41,7 +39,11 @@ public class ProjektLoeschen extends AppCompatActivity {
         File directory = getFilesDir();
         String[] files = directory.list();
         final ProjektLoeschen projekt = this;
-        final Button[] buttons = new Button[files.length];
+        int length = 0;
+        if (files != null) {
+            length = files.length;
+        }
+        final Button[] buttons = new Button[length];
         final RelativeLayout.LayoutParams[] button_details = new RelativeLayout.LayoutParams[buttons.length];
 
         ScrollView scrollview = new ScrollView(this);
@@ -59,13 +61,15 @@ public class ProjektLoeschen extends AppCompatActivity {
         layout_details.addRule(RelativeLayout.BELOW);
 
 
-        for(int i = 0; i<=files.length - 1;i++){
-            System.out.println(files[i]);
+        if (files != null) {
+            for(int i = 0; i<=files.length - 1;i++){
+                System.out.println(files[i]);
+            }
         }
 
         for(int i = 0; i<= buttons.length - 1;i++){
             buttons[i] = new Button(this);
-            buttons[i].setText(formatieren(files[i].toString()));
+            buttons[i].setText(formatieren(files[i]));
             buttons[i].setId(i+1);
             button_details[i] = new RelativeLayout.LayoutParams(RelativeLayout.LayoutParams.WRAP_CONTENT, RelativeLayout.LayoutParams.WRAP_CONTENT);
             button_details[i].addRule(RelativeLayout.CENTER_HORIZONTAL);
@@ -81,7 +85,10 @@ public class ProjektLoeschen extends AppCompatActivity {
                         public void onClick(View view) {
                             File directory = getFilesDir();
                             File file = new File(directory, ((String) buttons[j].getText()).concat(".dat"));
-                            file.delete();
+                            boolean del = file.delete();
+                            if(!del){
+                                System.out.println("Datei konnte nicht gelöscht werden : ".concat((String) buttons[j].getText()).concat(".dat"));
+                            }
                             Intent intent = new Intent(projekt, ProjektLoeschen.class);
                             startActivity(intent);
                         }

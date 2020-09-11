@@ -1,15 +1,14 @@
 package com.example.zeiterfassung;
 
-import androidx.appcompat.app.AppCompatActivity;
-import com.example.zeiterfassung.NeuesProjekt;
 import android.annotation.SuppressLint;
 import android.content.Intent;
+import android.os.Bundle;
 import android.view.KeyEvent;
 import android.view.View;
-import android.widget.RelativeLayout;
-import android.widget.TextView;
 import android.widget.Button;
-import android.os.Bundle;
+import android.widget.RelativeLayout;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
 

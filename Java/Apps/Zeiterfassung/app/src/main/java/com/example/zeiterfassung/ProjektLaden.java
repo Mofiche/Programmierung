@@ -8,7 +8,6 @@ import android.os.Bundle;
 import android.view.KeyEvent;
 import android.view.View;
 import android.widget.Button;
-import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.ScrollView;
@@ -18,7 +17,6 @@ import java.io.File;
 public class ProjektLaden extends AppCompatActivity {
 
     String formatieren(String string){
-        int index = string.indexOf(".dat");
         return string.replaceAll(".dat","");
     }
 
@@ -41,7 +39,13 @@ public class ProjektLaden extends AppCompatActivity {
         File directory = getFilesDir();
         String[] files = directory.list();
         final ProjektLaden projekt = this;
-        final Button[] buttons = new Button[files.length];
+        final Button[] buttons;
+        int length = 0;
+        if (files != null) {
+            length = files.length;
+        }
+        buttons = new Button[length];
+
         final RelativeLayout.LayoutParams[] button_details = new RelativeLayout.LayoutParams[buttons.length];
         ScrollView scrollview = new ScrollView(this);
         LinearLayout layout = new LinearLayout(this);
@@ -57,13 +61,15 @@ public class ProjektLaden extends AppCompatActivity {
         scrollview_details.addRule(RelativeLayout.BELOW);
         layout_details.addRule(RelativeLayout.BELOW);
 
-        for(int i = 0; i<=files.length - 1;i++){
-            System.out.println(files[i]);
+        if (files != null) {
+            for(int i = 0; i<=files.length - 1;i++){
+                System.out.println(files[i]);
+            }
         }
 
         for(int i = 0; i<= buttons.length - 1;i++){
             buttons[i] = new Button(this);
-            buttons[i].setText(formatieren(files[i].toString()));
+            buttons[i].setText(formatieren(files[i]));
             buttons[i].setId(i+1);
             button_details[i] = new RelativeLayout.LayoutParams(RelativeLayout.LayoutParams.WRAP_CONTENT, RelativeLayout.LayoutParams.WRAP_CONTENT);
             button_details[i].addRule(RelativeLayout.CENTER_HORIZONTAL);

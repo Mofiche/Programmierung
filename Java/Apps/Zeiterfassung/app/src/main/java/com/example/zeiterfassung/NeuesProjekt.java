@@ -1,7 +1,5 @@
 package com.example.zeiterfassung;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.graphics.Color;
@@ -12,20 +10,17 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.RelativeLayout;
 
-import com.google.android.material.snackbar.BaseTransientBottomBar;
-import com.google.android.material.snackbar.Snackbar;
+import androidx.appcompat.app.AppCompatActivity;
 
-import java.io.BufferedWriter;
 import java.io.File;
-import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
-import java.io.FileWriter;
 import java.io.IOException;
 import java.io.ObjectOutputStream;
 import java.util.Date;
 
 public class NeuesProjekt extends AppCompatActivity {
 
+    @SuppressLint("SetTextI18n")
     boolean projekt_initialisieren(String name, Button btn){
         File directory = getFilesDir();
         System.out.println(directory);
@@ -38,7 +33,7 @@ public class NeuesProjekt extends AppCompatActivity {
 
                 objectStream.writeObject(name);
                 objectStream.writeObject(new Date().toString().toCharArray());
-                objectStream.writeObject((int) 0);
+                objectStream.writeObject(0);
 
                 objectStream.close();
                 fileStream.close();
@@ -52,8 +47,6 @@ public class NeuesProjekt extends AppCompatActivity {
                 }
                 return false;
             }
-        } catch (FileNotFoundException e) {
-            e.printStackTrace();
         } catch (IOException e) {
             e.printStackTrace();
         }
