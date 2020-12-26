@@ -1,6 +1,8 @@
 package com.example.zeiterfassung;
 
 import android.annotation.SuppressLint;
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.KeyEvent;
@@ -9,6 +11,7 @@ import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.ScrollView;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -18,6 +21,30 @@ public class ProjektLoeschen extends AppCompatActivity {
 
     String formatieren(String string){
         return string.replaceAll(".dat","");
+    }
+
+    Boolean abfrage(final String name){
+        final Boolean[] ret = {false};
+        AlertDialog.Builder dialog = new AlertDialog.Builder(this);
+        dialog.setMessage("Wollen sie das Projekt '" + name + "' wirklich löschen?");
+        dialog.setTitle("");
+        dialog.setCancelable(true);
+        dialog.setPositiveButton("Ja", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialogInterface, int i) {
+                @SuppressLint("ShowToast") Toast toast = Toast.makeText(getApplicationContext(), "Projekt ".concat(name).concat(" wurde gelöscht!"),Toast.LENGTH_LONG);
+                ret[0] = true;
+            }
+        });
+        dialog.setNegativeButton("Nein", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialogInterface, int i) {
+                ret[0] = false;
+            }
+        });
+        AlertDialog alert = dialog.create();
+        alert.show();
+        return ret[0];
     }
 
     @Override
@@ -85,7 +112,10 @@ public class ProjektLoeschen extends AppCompatActivity {
                         public void onClick(View view) {
                             File directory = getFilesDir();
                             File file = new File(directory, ((String) buttons[j].getText()).concat(".dat"));
-                            boolean del = file.delete();
+                            boolean del = false;
+                            if(abfrage((String) buttons[j].getText())) {
+                                del = file.delete();
+                            }
                             if (!del) {
                                 System.out.println("Datei konnte nicht gelöscht werden : ".concat((String) buttons[j].getText()).concat(".dat"));
                             }
