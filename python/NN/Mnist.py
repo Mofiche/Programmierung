@@ -6,7 +6,8 @@ from torchvision import datasets, transforms
 from torch.autograd import Variable
 import time
 import matplotlib.pyplot as plt
-from apex import amp
+
+# from apex import amp
 
 torch.backends.cudnn.allow_tf32 = True
 torch.backends.cuda.matmul.allow_tf32 = True
@@ -34,6 +35,7 @@ class Netz(nn.Module):
         x = F.relu(x)
         x = x.view(-1, 320)
         x = F.relu(self.fc1(x))
+        #x = self.conv_dropout(x)
         x = self.fc2(x)
         return F.log_softmax(x)
 
@@ -48,7 +50,7 @@ test_data = torch.utils.data.DataLoader(datasets.MNIST('data', train=False, tran
 model = Netz()
 model = model.cuda()
 
-optimizer = optim.SGD(model.parameters(), lr=0.1, momentum=0.8)
+optimizer = optim.SGD(model.parameters(), lr=0.001, momentum=0.8)
 # model, optimizer = amp.initialize(model, optimizer)
 
 losses = []
@@ -78,10 +80,13 @@ def train(epoch):
                                                                        loss.item()))
         torch.save(model, 'mnist.pt')
 
+
 def test():
+    model = torch.load('mnist.pt')
     model.eval()
     loss = 0
     correct = 0
+    print("Testing:")
     for data, target in train_data:
         data = Variable(data.cuda())
         target = Variable(target.cuda())
@@ -89,24 +94,27 @@ def test():
         loss += F.nll_loss(out, target, reduction='sum').item()
         prediction = out.argmax(dim=1, keepdim=True)
         correct += prediction.eq(target.view_as(prediction)).cpu().sum().item()
+
     testloss = loss / len(test_data.dataset)
-    print("Durchschnitt:" , testloss)
-    print('Genauigkeit:', 1.* correct/len(test_data.dataset))
+    print("Durchschnitt:", testloss)
+    print('Genauigkeit:', 100. * correct / (6*len(test_data.dataset)), "%")
+
 
 a = []
+test()
+exit()
 for epoch in range(1, 2):
     if __name__ == '__main__':
         start = time.time()
         train(epoch)
         end = time.time()
-        print(end - start)
+        print("Zeit für Berechnung der Epoche:",end - start,"s")
         j = 0
         for i in range(len(plot)):
-            j+=plot[i]
-        print("AVG:" , j/len(plot))
-        a.append(j/len(plot))
-        if epoch%5 ==0:
-            plt.plot(a)
-            plt.show()
-if __name__ == '__main__':
-    test()
+            j += plot[i].item()
+        print("Durchschnitts Loss der jeweiligen Epoche:", j / len(plot))
+        a.append(j / len(plot))
+        test()
+plt.plot(plot)
+#plt.show()
+

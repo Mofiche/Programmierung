@@ -1,10 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="74f2a1b5-f22e-4fb6-bdfd-2c6a541fb04a" name="Default Changelist" comment="">
+    <list default="true" id="74f2a1b5-f22e-4fb6-bdfd-2c6a541fb04a" name="Default Changelist" comment="cleaning">
+      <change afterPath="$PROJECT_DIR$/venv/bin/Activate.ps1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/bin/activate" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/bin/activate.csh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/bin/activate.fish" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/bin/python" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/bin/python3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/bin/python3.8" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/lib64" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/pyvenv.cfg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Programmierung.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Programmierung.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/python/Tests/math.py" beforeDir="false" afterPath="$PROJECT_DIR$/python/Tests/math.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/python/Tests/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/python/Tests/test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python/NN/Mnist.py" beforeDir="false" afterPath="$PROJECT_DIR$/python/NN/Mnist.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python/NN/mnist.pt" beforeDir="false" afterPath="$PROJECT_DIR$/python/NN/mnist.pt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,21 +39,23 @@
   </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="/usr/lib/python3.9" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\Programmierung\python\GUI" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.math">
+  <component name="RunManager" selected="Python.Mnist">
     <configuration name="Client" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Programmierung" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -56,6 +69,27 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/python/Tests/Client.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Mnist" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Programmierung" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/python/NN" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/python/NN/Mnist.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -127,27 +161,6 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="heart" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="Programmierung" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/python/Tests" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/python/Tests/heart.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <configuration name="math" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Programmierung" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -170,20 +183,20 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python.Client" />
       <item itemvalue="Python.Pong" />
+      <item itemvalue="Python.Client" />
       <item itemvalue="Python.Server" />
       <item itemvalue="Python.Test" />
-      <item itemvalue="Python.heart" />
       <item itemvalue="Python.math" />
+      <item itemvalue="Python.Mnist" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.Mnist" />
         <item itemvalue="Python.math" />
         <item itemvalue="Python.Test" />
         <item itemvalue="Python.Client" />
         <item itemvalue="Python.Server" />
-        <item itemvalue="Python.heart" />
       </list>
     </recent_temporary>
   </component>
@@ -199,6 +212,7 @@
       </list>
     </option>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -252,7 +266,14 @@
       <option name="project" value="LOCAL" />
       <updated>1569805477033</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="cleaning">
+      <created>1609430952831</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1609430952831</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TodoView">
@@ -269,13 +290,12 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State>
-              <option name="COLUMN_ORDER" />
-            </State>
+            <State />
           </value>
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
@@ -283,28 +303,6 @@
     <MESSAGE value="pong fertig" />
     <MESSAGE value="cleaning" />
     <option name="LAST_COMMIT_MESSAGE" value="cleaning" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state width="1259" height="225" key="GridCell.Tab.0.bottom" timestamp="1575548445255">
-      <screen x="0" y="0" width="1280" height="813" />
-    </state>
-    <state width="1259" height="225" key="GridCell.Tab.0.bottom/0.0.1280.813@0.0.1280.813" timestamp="1575548445255" />
-    <state width="1259" height="225" key="GridCell.Tab.0.center" timestamp="1575548445254">
-      <screen x="0" y="0" width="1280" height="813" />
-    </state>
-    <state width="1259" height="225" key="GridCell.Tab.0.center/0.0.1280.813@0.0.1280.813" timestamp="1575548445254" />
-    <state width="1259" height="225" key="GridCell.Tab.0.left" timestamp="1575548445254">
-      <screen x="0" y="0" width="1280" height="813" />
-    </state>
-    <state width="1259" height="225" key="GridCell.Tab.0.left/0.0.1280.813@0.0.1280.813" timestamp="1575548445254" />
-    <state width="1259" height="225" key="GridCell.Tab.0.right" timestamp="1575548445254">
-      <screen x="0" y="0" width="1280" height="813" />
-    </state>
-    <state width="1259" height="225" key="GridCell.Tab.0.right/0.0.1280.813@0.0.1280.813" timestamp="1575548445254" />
-    <state x="336" y="230" key="com.intellij.ide.util.TipDialog" timestamp="1577989075079">
-      <screen x="0" y="0" width="1280" height="813" />
-    </state>
-    <state x="336" y="230" key="com.intellij.ide.util.TipDialog/0.0.1280.813@0.0.1280.813" timestamp="1577989075079" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
