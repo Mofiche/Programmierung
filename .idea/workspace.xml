@@ -1,21 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="74f2a1b5-f22e-4fb6-bdfd-2c6a541fb04a" name="Default Changelist" comment="cleaning">
-      <change afterPath="$PROJECT_DIR$/venv/bin/Activate.ps1" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/bin/activate" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/bin/activate.csh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/bin/activate.fish" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/bin/python" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/bin/python3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/bin/python3.8" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/lib64" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/pyvenv.cfg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/Programmierung.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Programmierung.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="74f2a1b5-f22e-4fb6-bdfd-2c6a541fb04a" name="Default Changelist" comment="Happy New Year 2021">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/python/NN/Mnist.py" beforeDir="false" afterPath="$PROJECT_DIR$/python/NN/Mnist.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python/NN/Mnist.py" beforeDir="false" afterPath="$PROJECT_DIR$/python/NN/MNIST/Mnist.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python/NN/a.png" beforeDir="false" afterPath="$PROJECT_DIR$/python/NN/MNIST/a.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python/NN/data/MNIST/processed/test.pt" beforeDir="false" afterPath="$PROJECT_DIR$/python/NN/MNIST/data/MNIST/processed/test.pt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python/NN/data/MNIST/processed/training.pt" beforeDir="false" afterPath="$PROJECT_DIR$/python/NN/MNIST/data/MNIST/processed/training.pt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python/NN/data/MNIST/raw/t10k-images-idx3-ubyte" beforeDir="false" afterPath="$PROJECT_DIR$/python/NN/MNIST/data/MNIST/raw/t10k-images-idx3-ubyte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python/NN/data/MNIST/raw/t10k-images-idx3-ubyte.gz" beforeDir="false" afterPath="$PROJECT_DIR$/python/NN/MNIST/data/MNIST/raw/t10k-images-idx3-ubyte.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python/NN/data/MNIST/raw/t10k-labels-idx1-ubyte" beforeDir="false" afterPath="$PROJECT_DIR$/python/NN/MNIST/data/MNIST/raw/t10k-labels-idx1-ubyte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python/NN/data/MNIST/raw/t10k-labels-idx1-ubyte.gz" beforeDir="false" afterPath="$PROJECT_DIR$/python/NN/MNIST/data/MNIST/raw/t10k-labels-idx1-ubyte.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python/NN/data/MNIST/raw/train-images-idx3-ubyte" beforeDir="false" afterPath="$PROJECT_DIR$/python/NN/MNIST/data/MNIST/raw/train-images-idx3-ubyte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python/NN/data/MNIST/raw/train-images-idx3-ubyte.gz" beforeDir="false" afterPath="$PROJECT_DIR$/python/NN/MNIST/data/MNIST/raw/train-images-idx3-ubyte.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python/NN/data/MNIST/raw/train-labels-idx1-ubyte" beforeDir="false" afterPath="$PROJECT_DIR$/python/NN/MNIST/data/MNIST/raw/train-labels-idx1-ubyte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python/NN/data/MNIST/raw/train-labels-idx1-ubyte.gz" beforeDir="false" afterPath="$PROJECT_DIR$/python/NN/MNIST/data/MNIST/raw/train-labels-idx1-ubyte.gz" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/python/NN/mnist.pt" beforeDir="false" afterPath="$PROJECT_DIR$/python/NN/mnist.pt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python/NN/mnist2.pt" beforeDir="false" afterPath="$PROJECT_DIR$/python/mnist.pt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python/NN/s.png" beforeDir="false" afterPath="$PROJECT_DIR$/python/NN/MNIST/s.png" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,6 +54,8 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/python/NN" />
+      <recent name="$PROJECT_DIR$/python/NN/MNIST" />
       <recent name="D:\Programmierung\python\GUI" />
     </key>
   </component>
@@ -89,7 +93,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/python/NN/Mnist.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/python/NN/MNIST/Mnist.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -183,12 +187,12 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python.Pong" />
       <item itemvalue="Python.Client" />
+      <item itemvalue="Python.Mnist" />
+      <item itemvalue="Python.Pong" />
       <item itemvalue="Python.Server" />
       <item itemvalue="Python.Test" />
       <item itemvalue="Python.math" />
-      <item itemvalue="Python.Mnist" />
     </list>
     <recent_temporary>
       <list>
@@ -273,7 +277,14 @@
       <option name="project" value="LOCAL" />
       <updated>1609430952831</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Happy New Year 2021">
+      <created>1609441752416</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1609441752416</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TodoView">
@@ -302,7 +313,8 @@
     <MESSAGE value="fix4" />
     <MESSAGE value="pong fertig" />
     <MESSAGE value="cleaning" />
-    <option name="LAST_COMMIT_MESSAGE" value="cleaning" />
+    <MESSAGE value="Happy New Year 2021" />
+    <option name="LAST_COMMIT_MESSAGE" value="Happy New Year 2021" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
